@@ -1,0 +1,14 @@
+- name: production
+  become: true
+  hosts: child
+  vars_files:
+    - vars/main.yml
+  roles:
+    - setup
+    - apache2
+    - php
+    - composer
+    - mysql
+    - pgsql
+    - push
+    

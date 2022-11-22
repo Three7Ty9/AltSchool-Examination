@@ -1,0 +1,6 @@
+[development]
+parent
+
+[production]
+child
+
